@@ -1,0 +1,86 @@
+ body {
+        background-image: url('main-background.webp');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+.quick-entry {
+    background: var(--bg-overlay);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+#journal-entry {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(172,182,229,0.3);
+    border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background: white;
+    resize: vertical;
+    margin: 15px 0;
+}
+
+.save-entry-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.entry-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.entry-feedback {
+    font-size: 14px;
+    color: #2D9C8A;
+}
+
+.journal-history h2 {
+    margin-bottom: 20px;
+}
+
+.entry-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary);
+}
+
+.entry-date {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry-content {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.delete-entry {
+    background: none;
+    border: none;
+    color: #D45D79;
+    cursor: pointer;
+    font-size: 16px;
+}
